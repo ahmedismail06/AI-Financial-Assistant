@@ -1,56 +1,92 @@
-# AI Financial Assistant
+# AI Financial Assistant - "William"
 
-## Overview
-AI Financial Assistant ("William") is an intelligent, friendly, and highly capable financial assistant designed to help users analyze complex corporate financial documents such as 10-K filings and earnings call transcripts. It leverages advanced retrieval-augmented generation (RAG) and large language models to extract key insights, answer questions, and summarize relevant sections with clarity and precision. The assistant is accessible via both text and voice interfaces.
+An intelligent financial assistant to help you analyze complex corporate financial documents like 10-K filings and earnings call transcripts. "William" uses advanced AI to extract key insights, answer your questions, and summarize dense financial information in an easy-to-understand manner.
 
-## Features
-- **Document Analysis:** Upload and analyze financial documents (PDFs) to extract insights and answer questions.
-- **Conversational AI:** Interact with "William" through a chat interface for financial document Q&A.
-- **Voice Output:** Get AI responses read aloud using ElevenLabs voice synthesis.
-- **User-Friendly Explanations:** Breaks down complex financial terms and concepts into simple, friendly language.
+🌟 **Features**
 
-## How It Works
-1. **Document Loading:** The assistant loads and processes PDF documents using PyMuPDF.
-2. **Retrieval-Augmented Generation (RAG):** Uses sentence transformers and cross-encoders to find and rank the most relevant document sections for a given query.
-3. **LLM Response:** Generates clear, context-aware answers using Google Gemini models.
-4. **Voice Synthesis:** Optionally reads responses aloud using ElevenLabs.
+- 📄 **Document Analysis:** Upload and analyze financial PDF documents.
+- 💬 **Conversational AI:** Interact with "William" through an intuitive chat interface.
+- 🔊 **Voice Output:** Get responses read aloud for a hands-free experience.
+- 🧠 **User-Friendly Explanations:** Simplifies complex financial terminology and concepts.
 
-## Setup
-1. **Clone the repository** and navigate to the project directory.
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Set up environment variables:**
-   - Create a `.env` file in the project root with your API keys:
-     ```env
-     GOOGLE_API_KEY=your_google_api_key
-     ELEVENLABS_API_KEY=your_elevenlabs_api_key
-     ```
+🚀 **How It Works**
 
-## Usage
-- **Command Line:**
-  Run the main script and follow the prompts to analyze a document:
-  ```bash
-  python main.py
-  ```
-- **Jupyter Notebooks:**
-  Explore and interact with the assistant using `chatbot.ipynb` or `main.ipynb`.
+The AI Financial Assistant leverages a powerful combination of technologies to deliver insightful analysis:
 
-## File Structure
-- `main.py` / `main.ipynb`: Core logic for document analysis and Q&A.
-- `chatbot.py` / `chatbot.ipynb`: Conversational interface and workflow.
-- `voice.py` / `voice.ipynb`: Voice synthesis utilities.
-- `requirements.txt`: Python dependencies.
+- **Document Loading:** It uses PyMuPDF to process and extract text from your uploaded PDF documents.
+- **Retrieval-Augmented Generation (RAG):** The core of the assistant, this process uses sentence transformers and cross-encoders to find the most relevant sections of the document to answer your questions.
+- **LLM Response Generation:** It uses Google's powerful Gemini models to generate accurate and context-aware answers.
+- **Voice Synthesis:** Optionally, it can read the generated responses aloud using ElevenLabs' realistic text-to-speech technology.
 
-## Requirements
-- Python 3.8+
-- Google Generative AI API key
-- ElevenLabs API key (for voice output)
+🛠️ **Getting Started**
 
-## Disclaimer
-This tool is for informational and educational purposes only. It does not provide financial advice. Always consult a qualified professional for financial decisions.
+Follow these steps to set up and run the AI Financial Assistant on your local machine.
+
+### Prerequisites
+
+Make sure you have the following installed:
+- Python 3.8 or higher
+- An API key from Google AI for Developers
+- An API key from ElevenLabs (optional, for voice output)
+
+### Installation
+
+Clone the repository:
+```bash
+git clone https://github.com/ahmedismail06/AI-Financial-Assistant.git
+cd AI-Financial-Assistant
+```
+
+Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+Set up your environment variables:
+Create a file named `.env` in the root directory of the project and add your API keys as follows:
+```env
+GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
+ELEVENLABS_API_KEY="YOUR_ELEVENLABS_API_KEY"
+```
+
+▶️ **Usage**
+
+You can run the AI Financial Assistant either from the command line or using the provided Jupyter Notebooks.
+
+#### Command Line
+To start the assistant from the command line, run:
+```bash
+python main.py
+```
+
+#### Jupyter Notebooks
+For a more interactive experience, you can use the Jupyter Notebooks:
+- `chatbot.ipynb`: A notebook focused on the conversational interface.
+- `main.ipynb`: The main notebook containing the core logic of the application.
+
+📂 **File Structure**
+```
+.
+├── main.py               # Core logic of the application
+├── chatbot.py            # Conversational interface
+├── voice.py              # Voice synthesis utilities
+├── main.ipynb            # Jupyter Notebook with the core logic
+├── chatbot.ipynb         # Jupyter Notebook for the conversational interface
+├── voice.ipynb           # Jupyter Notebook for voice utilities
+├── requirements.txt      # Python dependencies
+└── README.md             # This file
+```
+
+🤝 **Contributing**
+
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+
+📄 **License**
+
+This project is licensed under the Apache 2.0 License. See the LICENSE file for details.
 
 ---
 
-*Developed by Ahmed Ismail.* 
+**Disclaimer**
+
+This tool is intended for informational and educational purposes only. It is not financial advice. Please consult with a qualified financial professional before making any investment decisions. 
