@@ -1,0 +1,9 @@
+google-generativeai
+sentence-transformers
+langchain-community
+langchain-core
+langchain-google-genai
+langgraph
+pymupdf
+python-dotenv
+typing-extensions 
